@@ -1,0 +1,64 @@
+#server.port=8767
+#spring.application.name=cg-pay-provider
+#spring.jpa.generate-ddl=false
+#spring.jpa.show-sql=true
+#spring.jpa.hibernate.ddl-auto=none
+server:
+  port: 8767
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+  
+  
+  
+spring:
+  application:
+    name: aopioc-provider
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+#spring.datasource.platform=h2
+#spring.datasource.schema=classpath:schema.sql
+#spring.datasource.data=classpath:data.sql
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+#logging.level.root=INFO
+#logging.level.org.hibernate=INFO
+#logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+#logging.level.org.hibernate.type.descriptor.sql.BasicExtractor=TRACE
+#eureka.client.serviceUrl.defaultZone=http://172.16.67.243:8761/eureka/,http://172.16.67.243:8762/eureka/
+#eureka.instance.prefer-ip-address=true
+
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE            
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://172.16.67.243:8761/eureka/,http://172.16.67.243:8762/eureka/
+#  instance:
+#    prefer-ip-address: true
+#
+
+
+
+
+
+
+
+
+
+
+
+

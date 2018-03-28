@@ -1,0 +1,26 @@
+#server.port=8763
+#spring.application.name=cg-framework-config
+#spring.cloud.config.server.git.uri=http://pizhiyun@172.16.67.213:18080/java/spring-cloud-config-repo.git
+#spring.cloud.config.server.git.username=pizhiyun
+#spring.cloud.config.server.git.password=1234567*
+#eureka.client.serviceUrl.defaultZone=http://peer1:8761/eureka/,http://peer2:8762/eureka/
+server:
+  port: 8367
+spring:
+  application:
+    name: cg-framework-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://pizhiyun@172.16.67.213:18080/java/spring-cloud-config-repo.git
+          username: zhouzhou
+          password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://peer1:8761/eureka/,http://peer2:8762/eureka/   
+    
+    
+     
+ 
